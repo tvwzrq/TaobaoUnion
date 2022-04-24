@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="contentItem"
+            type="com.example.taobaounion.data.onsell.OnSellContentItem" />
+
+    </data>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CardViewStyle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ticket_link="@{contentItem}">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/on_sell_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/on_sell_title"
+            android:text="@{contentItem.title}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintTop_toBottomOf="@+id/on_sell_cover"
+            android:padding="5dp"/>
+        <com.example.taobaounion.views.RTextView
+            android:id="@+id/on_sell_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/on_sell_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:gravity="center"
+            android:textSize="13sp"
+            app:flag="line_through"
+            android:padding="2dp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:id="@+id/on_sell_off_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/on_sell_original_price"
+            app:layout_constraintTop_toBottomOf="@+id/on_sell_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:textColor="@color/red"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+</layout>

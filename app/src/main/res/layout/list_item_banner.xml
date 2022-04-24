@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <data>
+        <variable
+            name="categoryItem"
+            type="com.example.taobaounion.data.home.HomePageContentItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ticket_link="@{categoryItem}">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/banner_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:padding="2dp"
+           />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

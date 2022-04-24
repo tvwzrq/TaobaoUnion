@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TaobaoUnion</string>
+    <string name="NO_NET">网络错误,点击重试</string>
+    <string name="LOADING_ERROR">网络错误,请检查网络是否连接</string>
+    <string name="LOADING">加载中...</string>
+    <string name="goods_off_price">省%1$d元</string>
+    <string name="original_price">¥</string>
+    <string name="goods_sell_count">人已购买</string>
+    <string name="load_end">已加载全部内容…</string>
+    <string name="tao_kou_ling">淘口令</string>
+    <string name="ling_juan">领劵购买</string>
+    <string name="loading_image_error">加载出错了</string>
+    <string name="text_selected_title">精选宝贝</string>
+    <string name="text_on_sell_title">特惠宝贝</string>
+    <string name="text_history_title">搜索历史</string>
+    <string name="text_recommend_title">热门搜索</string>
+    <string name="text_search">搜索</string>
+    <string name="text_cancel">取消</string>
+</resources>

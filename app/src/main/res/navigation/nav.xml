@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_selected"
+        android:name="com.example.taobaounion.ui.selected.SelectedFragment"
+        android:label="SelectedFragment"
+        tools:layout="@layout/fragment_selected"/>
+    <fragment
+        android:id="@+id/fragment_search"
+        android:name="com.example.taobaounion.ui.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search"/>
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.taobaounion.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_fragment_home_to_QRScanFragment"
+            app:destination="@id/QRScanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_on_sell"
+        android:name="com.example.taobaounion.ui.onsell.OnSellFragment"
+        android:label="RedPacketFragment"
+        tools:layout="@layout/fragment_on_sell"/>
+    <fragment
+        android:id="@+id/ticketFragment"
+        tools:layout="@layout/fragment_ticket"
+        android:name="com.example.taobaounion.ui.ticket.TicketFragment"
+        android:label="TicketFragment" />
+    <fragment
+        android:id="@+id/QRScanFragment"
+        android:name="com.example.taobaounion.ui.home.QRScanFragment"
+        android:label="QRScanFragment" />
+</navigation>

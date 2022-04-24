@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RTextView">
+        <attr name="flag" format="enum">
+            <enum name="underline" value="1"/>
+            <enum name="line_through" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="FlowTextLayout">
+        <attr name="horizontal_space" format="dimension"/>
+        <attr name="vertical_space" format="dimension"/>
+    </declare-styleable>
+</resources>
